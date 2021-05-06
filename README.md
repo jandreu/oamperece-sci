@@ -58,7 +58,11 @@ this will donwload the light version of anaconda (Miniforge) in your Oracle linu
 bash Miniforge3-Linux-aarch64.sh 
 ```
 
-after running this command it would ask several questions. My response to all of them was 'yes'. Then after this Miniforge is installed but it won't be active until you re-initiate your terminal. For that you have to close your ssh connection and opening again.
+after running this command it would ask several questions. My response to all of them was 'yes'. Then after this Miniforge is installed but it won't be active until you re-initiate your terminal. For that you have to close your ssh connection and re-initiate a new connection. After you have done this, now your shell will appear with a name before the user and machine name such (you don't have to type anything):
+
+```
+(base) [opc@ampere-dev ~]$
+```
 
 
 
