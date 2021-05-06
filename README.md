@@ -49,7 +49,7 @@ Then we have to install further dependencies in the our Oracle linux, that will 
 The next thing we are going to do is to download the Miniconda installer for Arch. I like to download installed in the tmp folder, so the system can remove this downloaded files after sometime or reboot. To go to the temporal folder and download miniconda for arch type the following commands in the console:
 
 ```
-cd \tmp
+cd /tmp
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 ```
 
