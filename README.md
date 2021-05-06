@@ -1,4 +1,5 @@
-Dr. Javier Andreu-Perez (C) University of Essex, United Kingdom. \\
+Dr. Javier Andreu-Perez (C) University of Essex, United Kingdom. 
+
 Thanks to Richar Pitts and Mike Riley from Oracle Resaerch for providing me access to this amazing cutting edge computing architecture in Oracle Cloud.
 
 # How to install a (python) scientific computing environment in Oracle Ampere
