@@ -1,4 +1,4 @@
-Dr. Javier Andreu-Perez (C) University of Essex
+Dr. Javier Andreu-Perez (C) University of Essex, United Kingdom
 
 # Installing a Scientific Computing Environment in Oracle Ampere
 
@@ -19,6 +19,17 @@ First login into your compute instance using your public key. if you are using L
 ```
 ssh -i {Your private key name}.ppk opc@{Your instance IP}
 ```
+
+After you have log in into your Oracle Linux server, if it is the first time you should type 'Yes' to store the certificate, and right after you will prompted with a welcome message.
+
+The next thing I'd recommend to do is to run an update of your distribution typing the following command: 
+
+```
+sudo yum update -y
+```
+
+if you have logged via ssh with the user "opc" that is " opc@{Your instance IP), you should be able to run commands as root as this user is already included by default in the sudoers file.
+
 
 
 
