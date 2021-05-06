@@ -1,6 +1,7 @@
-Dr. Javier Andreu-Perez (C) University of Essex, United Kingdom
+Dr. Javier Andreu-Perez (C) University of Essex, United Kingdom.
+Thanks to Richar Pitts and Mike Riley from Oracle Resaerch for providing me access to this amazing cutting edge computing architecture in Oracle Cloud.
 
-# Installing a Scientific Computing Environment in Oracle Ampere
+# Installing a (python) Scientific Computing Environment in Oracle Ampere
 
 Oracle Cloud is unique in offering Arm-powered servers with up to threads 160 cores for heaving threading applications. ARM processors are a well-known component of embedded systems and mobiles, but little is known about their scientific application. Oracle Cloud now offers the opportunity of running in the cloud applications that require massive multithreading, which was before only possible in HPC bare-bone systems.
 
@@ -8,11 +9,11 @@ In this guide, I'll share with the community how to install libraries that helpe
 
 # How to Create your Ampere computing instance in Oracle Cloud
 
-TODO
+TODO (instructions with pictures to come soon).
 
-# Installing Anaconda for Arch architecture
+# Installing Anaconda for Arch64 Architecture
 
-A very standards tool we use for scientific computing is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627  
+A standard tool we use for scientific computing with Python is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627  
 
 Miniforge is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in resource limiting architectures. It is also limited to the conda-forge repository of Anaconda, but this repository is also one of the ones with more libraries.
 
@@ -63,6 +64,8 @@ after running this command it would ask several questions. My response to all of
 ```
 (base) [opc@ampere-dev ~]$
 ```
+
+ et voilà ! you have Anaconda (well Miniforge version of Anaconda) running in your Ampere Instance. You can now use all standards commmands of Anaconda to create separate environment and install and unistall your favourite packages.
 
 
 
