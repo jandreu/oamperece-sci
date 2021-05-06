@@ -17,7 +17,7 @@ A very standards tool we use for scientific computing is Anaconda Environment. I
 First login into your compute instance using your public key. if you are using Linux you need to go to the same directory were you have located your key and them type:
 
 ```
-ssh -i yourprivateky.ppk opc@{Your instance IP}
+ssh -i {Your private key name}.ppk opc@{Your instance IP}
 ```
 
 
