@@ -10,11 +10,11 @@ In this guide, I'll share with the community how to install libraries that helpe
 
 TODO
 
-# Installing Miniconda for Arch architecture
+# Installing Anaconda for Arch architecture
 
 A very standards tool we use for scientific computing is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627  
 
-Miniconda is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in resource limiting architectures.
+Miniforge is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in resource limiting architectures. It is also limited to the conda-forge repository of Anaconda, but this repository is also one of the ones with more libraries.
 
 First login into your compute instance using your public key. if you are using Linux you need to go to the same directory were you have located your key and them type:
 
@@ -39,6 +39,26 @@ sudo yum install -y python3
 ```
 
 You may get a return message saying that *Nothing to do* but that's fine, that means that python3 was already installed in your Oracle Linux image but it is worth checking.
+
+```
+sudo yum install devtoolset-10-gcc.aarch64 devtoolset-10-gcc-c++.aarch64
+```
+
+Then we have to install further dependencies in the our Oracle linux, that will allow to compilie
+
+The next thing we are going to do is to download the Miniconda installer for Arch. I like to download installed in the tmp folder, so the system can remove this downloaded files after sometime or reboot. To go to the temporal folder and download miniconda for arch type the following commands in the console:
+
+```
+cd \tmp
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-armv7l.sh
+```
+
+
+
+
+
+
+
 
 
 
