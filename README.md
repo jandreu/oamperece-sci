@@ -12,7 +12,9 @@ TODO
 
 # Installing Miniconda for Arch architecture
 
-A very standards tool we use for scientific computing is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627
+A very standards tool we use for scientific computing is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627  
+
+Miniconda is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in resource limiting architectures.
 
 First login into your compute instance using your public key. if you are using Linux you need to go to the same directory were you have located your key and them type:
 
@@ -29,6 +31,11 @@ sudo yum update -y
 ```
 
 if you have logged via ssh with the user "opc" that is " opc@{Your instance IP), you should be able to run commands as root as this user is already included by default in the sudoers file.
+
+The next thing you would have to do is to install *python3*, this is necessary to use the miniconda install.er
+
+
+```
 
 
 
