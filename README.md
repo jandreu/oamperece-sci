@@ -52,6 +52,14 @@ The next thing we are going to do is to download the Miniconda installer for Arc
 cd /tmp
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 ```
+this will donwload the light version of anaconda (Miniforge) in your Oracle linux tmp folder. Now to install it just type in your terminal:
+
+```
+bash Miniforge3-Linux-aarch64.sh 
+```
+
+after running this command it would ask several questions. My response to all of them was 'yes'. Then after this Miniforge is installed but it won't be active until you re-initiate your terminal. For that you have to close your ssh connection and opening again.
+
 
 
 
