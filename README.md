@@ -50,8 +50,9 @@ The next thing we are going to do is to download the Miniconda installer for Arc
 
 ```
 cd \tmp
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-armv7l.sh
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 ```
+
 
 
 
