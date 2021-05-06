@@ -34,10 +34,11 @@ if you have logged via ssh with the user "opc" that is " opc@{Your instance IP),
 
 The next thing you would have to do is to install *python3*, this is necessary to use the miniconda install.er
 
-
+```
+sudo yum install -y python3
 ```
 
-
+You may get a return message saying that *Nothing to do* but that's fine, that means that python3 was already installed in your Oracle Linux image but it is worth checking.
 
 
 
