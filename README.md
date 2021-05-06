@@ -16,7 +16,8 @@ TODO (instructions with pictures to come soon).
 
 A standard tool we use for scientific computing with Python is Anaconda Environment. If you don't know yet what is Anaconda, I would suggest you first read one of the blog posts that explain what Anaconda is and how it could be used in data science and other applications: https://towardsdatascience.com/anaconda-start-here-for-data-science-in-python-475045a9627  
 
-Miniforge is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in resource limiting architectures. It is also limited to the conda-forge repository of Anaconda, but this repository is also one of the ones with more libraries.
+
+Miniforge is a lighter version of Anaconda were some rarely used libraries and functions have been removed, therefore it is possible to install this Anaconda in not mainstream architectures such as ARM, PowerPC etc. It is also limited to the conda-forge repository of Anaconda, but this repository is also one of the ones with more libraries.
 
 First login into your compute instance using your public key. if you are using Linux you need to go to the same directory were you have located your key and them type:
 
@@ -32,7 +33,21 @@ The next thing I'd recommend to do is to run an update of your distribution typi
 sudo yum update -y
 ```
 
-if you have logged via ssh with the user "opc" that is " opc@{Your instance IP), you should be able to run commands as root as this user is already included by default in the sudoers file.
+if you have logged via ssh with the user "opc" that is " opc@{Your instance IP), you should be able to run commands as root as this user is already included by default in the sudoers file. There are two options for installing anaconda in Ampere.
+
+##Option 1 (the easier)
+
+The straightforward option of installing Anaconda in Oracle Ampere is by using the package included in the Oracle Linux repository called *Anaconda-core*. This is the same package provided provided in Fedora linux. It's installation is very simple, just type (optional):
+
+```
+sudo yum install anaconda
+```
+
+however there is not free-lunch theorem, depending on the repository to install Anaconda comes with the disadvantage that to manage your conda environments, installing packages and so forth, you would need to call in your superuser with *sudo* (unless you change the permits of the installation folders (not recommeded)), and there will be a single anaconda installation shared by all users. 
+
+##Option 2 (the nicer)
+
+The next option is to install anaconda by yourself in your independent home folder, so if you create new users in the folder they can either share or have their independent anaconda install and enviroments. Also, as this is will be installed in your user's *home* folder, therefore you can an create environments and install packages without needing to provide the superuser password.
 
 The next thing you would have to do is to install *python3*, this is necessary to use the miniconda install.er
 
